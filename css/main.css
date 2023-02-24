@@ -1,0 +1,197 @@
+/* Start Varriables */
+:root {
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --light-slate-blue-background: hsl(252, 100%, 67%);
+  --light-royal-blue-background: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* End Varriables */
+/* Start Global Rules */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* End Global Rules */
+/* Start Main */
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  background-color: white;
+  border-radius: 2em;
+  height: 400px
+}
+
+/* Start Result Part */
+.main .result {
+  background: linear-gradient(to bottom, #6545f4 50%, #352de1 100%);
+  border-radius: 2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40p
+}
+
+.main .result p:first-of-type {
+  margin: 30px;
+  color: #cdbfff
+}
+
+.main .result .circle {
+  background: linear-gradient(to bottom, #4c25d3 50%, transparent 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  height: 150px;
+  width: 150px;
+}
+
+.main .result .circle h3 {
+  font-size: 3em;
+}
+
+.main .result .circle p {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.main .result>h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.main .result>p:last-of-type {
+  width: 70%;
+  text-align: center;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* End Result Part */
+/* Start Summary Part */
+.main .summary {
+  padding: 20px 30px;
+}
+
+.main .summary>p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.main .summary-content .box:first-of-type {
+  margin-top: 20px;
+}
+
+.main .summary-content .box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.main .summary-content .box .left {
+  display: flex;
+}
+
+.main .summary-content .box .left img {
+  margin-right: 10px;
+}
+
+.main .summary-content .box .left p {
+  font-size: 16px;
+}
+
+.main .summary-content .box .right p {
+  font-size: 16px;
+}
+
+.main .summary-content .box .right p span {
+  color: #777;
+}
+
+.main .summary-content .continue {
+  width: 100%;
+  border: 0;
+  background-color: var(--dark-gray-blue);
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main .summary-content .continue:hover {
+  background: linear-gradient(to bottom,
+      #6542ff 50%,
+      #322dea 100%);
+}
+
+.main .summary-content .reaction {
+  background-color: #fff6f5;
+}
+
+.main .summary-content .reaction .left {
+  color: #f06f6c;
+}
+
+.main .summary-content .memory {
+  background-color: #fffbf2;
+}
+
+.main .summary-content .memory .left {
+  color: #ffb536;
+}
+
+.main .summary-content .verbal {
+  background-color: #f2fbfa;
+}
+
+.main .summary-content .verbal .left {
+  color: #47c7a6;
+}
+
+.main .summary-content .visual {
+  background-color: #f3f3fd;
+}
+
+.main .summary-content .visual .left {
+  color: #454eae;
+}
+
+/* End Summary Part */
+
+/* End Main */
