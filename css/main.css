@@ -195,4 +195,51 @@ p {
 
 /* End Summary Part */
 
+@media (max-width: 757px) {
+  body {
+    display: initial;
+    background-color: #222;
+  }
+
+  .main {
+    display: flex;
+    flex-flow: nowrap column;
+    box-shadow: none;
+    min-height: 100vh;
+  }
+
+  .main .result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .main .summary {
+    background-color: white;
+    height: 100%;
+  }
+
+  .main .result>p:last-of-type {
+    padding-bottom: 50px;
+  }
+
+  .main .summary-content .box {
+    margin-bottom: 25px;
+    padding: 18px;
+  }
+
+  .main .summary-content .box .left p {
+    font-size: 18px;
+  }
+
+  .main .summary-content .continue {
+    padding: 15px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
 /* End Main */
