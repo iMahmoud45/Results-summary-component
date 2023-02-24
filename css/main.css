@@ -195,7 +195,7 @@ p {
 
 /* End Summary Part */
 
-@media (max-width: 757px) {
+@media screen and (max-width: 757px) {
   body {
     display: initial;
     background-color: #222;
